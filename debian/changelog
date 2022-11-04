@@ -1,3 +1,12 @@
+pixman (0.40.0-1ubuntu0.22.04.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: OOB write in in rasterize_edges_8
+    - debian/patches/CVE-2022-44638.patch: avoid integer overflow leading
+      to out-of-bounds write in pixman/pixman-trap.c.
+    - CVE-2022-44638
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 04 Nov 2022 11:03:18 -0400
+
 pixman (0.40.0-1build4) jammy; urgency=high
 
   * No change rebuild for ppc64el baseline bump.
